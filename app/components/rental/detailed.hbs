@@ -2,12 +2,11 @@
   <h2>{{rental.title}}</h2>
   <p>Nice choice! This looks like a nice place to stay near
     {{@rental.city}}.</p>
-  <a
-    href='#'
-    class='share button'
-    rel='external nofollow noopener noreferrer'
-    target='_blank'
-  >Share on Twitter!</a>
+  <ShareButton
+    @text='Check out {{@rental.title}} on Super Rental!'
+    @hashtags='vacation, travel, authentic, blessed, super_rentals'
+    @via='emberjs'
+  >Share on Twitter!</ShareButton>
 </Jumbo>
 <article class='rental detailed'>
   <Rental::Image
